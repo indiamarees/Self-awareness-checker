@@ -124,11 +124,13 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gray-50 p-6">
       <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6">
-        <header className="mb-6">
-          <h1 className="text-2xl font-semibold">Self-Awareness Checker</h1>
-          <p className="text-sm text-gray-600 mt-1">Answer honestly. Use the scale 1 (Not at all) → 5 (Completely).</p>
-        </header>
-
+        <header className="mb-6 text-center">
+  {/* logo from public/logo.png */}
+  <img src="/logo.png" alt="Your Goal Scorecard" className="mx-auto w-48" />
+  <p className="text-xs text-gray-600 mt-1">
+    Designed &amp; Developed by <strong>Mara Mareeswaran @indiamarees</strong>
+  </p>
+</header>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid gap-4">
             {QUESTIONS.map((q) => (
